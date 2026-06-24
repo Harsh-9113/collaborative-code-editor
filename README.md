@@ -6,6 +6,7 @@ A full-stack collaborative coding platform where multiple users can create works
 
 This project simulates a lightweight online development environment that enables developers to collaborate inside shared workspaces. Users can create coding rooms, manage files, invite collaborators, and instantly preview HTML/CSS/JavaScript changes.
 
+![Landing Page](./screenshots/landing-page.png)
 
 ## ✨ Features
 
