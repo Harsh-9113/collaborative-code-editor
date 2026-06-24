@@ -2,74 +2,70 @@
 
 A full-stack collaborative coding platform where multiple users can create workspaces, manage project files, invite team members, and edit code with live preview support.
 
+### Landing Page
+![Landing Page](./screenshots/landing-page.png)
+
+### Login Page
+![Login Page](./screenshots/login-page%20(2).png)
+
+### Sign Up Page
+![Sign Up Page](./screenshots/signup.png)
+
+### Workspace Editor
+![Workspace Editor](./screenshots/workspace-editor.png)
+---
+
 ## 🌟 Overview
 
-This project simulates a lightweight online development environment that enables developers to collaborate inside shared workspaces. Users can create coding rooms, manage files, invite collaborators, and instantly preview HTML/CSS/JavaScript changes.
+This project simulates a lightweight online development environment that lets developers collaborate inside shared workspaces. Users can create coding rooms, manage files, invite collaborators, and instantly preview HTML/CSS/JavaScript changes — all from the browser.
 
-![Landing Page](./screenshots/landing-page.png)
+---
 
 ## ✨ Features
 
 ### 🔐 Authentication
-- User Registration & Login
-- Session Management
-- Protected Routes
-- User Profiles
+- User registration & login
+- Session management
+- Protected routes
+- User profiles
 
 ### 🏢 Workspace Management
-- Create Workspaces
-- Delete Workspaces
-- Workspace Ownership
-- Role-Based Access
+- Create & delete workspaces
+- Workspace ownership
+- Role-based access (Owner / Editor)
 
 ### 📁 File Management
-- Create New Files
-- Rename Files
-- Delete Files
-- Store Files in Database
-- Instant Sidebar Updates
+- Create, rename, and delete files
+- Files persisted in PostgreSQL
+- Instant sidebar updates on change
 
 ### 📝 Code Editor
-- Monaco Editor Integration
-- Syntax Highlighting
-- Multi-file Editing
-- HTML Support
-- CSS Support
-- JavaScript Support
-- JSON Support
-- TXT Support
+- Monaco Editor integration
+- Syntax highlighting
+- Multi-file editing
+- Support for HTML, CSS, JavaScript, JSON & TXT
 
 ### 👥 Collaboration
-- Invite Members via Email
-- Accept Invitations
-- Workspace Membership System
-- Owner & Editor Roles
+- Invite members via email
+- Accept/decline invitations
+- Workspace membership system
+- Owner & Editor roles
 
 ### ⚡ Live Preview
-- Real-Time HTML Rendering
-- CSS Styling Preview
-- JavaScript Execution Support
-- Instant Refresh
+- Real-time HTML rendering
+- CSS styling preview
+- JavaScript execution support
+- Instant refresh on save
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- React.js
-- Vite
-- Monaco Editor
-- Context API
-- CSS
-
-### Backend & Database
-- InsForge
-- PostgreSQL
-
-### Tools
-- Git
-- GitHub
-- VS Code
+| Layer | Technology |
+|---|---|
+| **Frontend** | React.js, Vite, Monaco Editor, Context API, CSS |
+| **Backend & Database** | InsForge, PostgreSQL |
+| **Tooling** | Git, GitHub, VS Code |
 
 ---
 
@@ -80,21 +76,21 @@ collaborative-code-editor/
 │
 ├── src/
 │   ├── lib/
-│   │   ├── api.js
-│   │   ├── authSession.js
-│   │   └── insforge.js
+│   │   ├── api.js            # API request helpers
+│   │   ├── authSession.js    # Session/token handling
+│   │   └── insforge.js       # InsForge client setup
 │   │
 │   ├── state/
-│   │   └── AuthContext.jsx
+│   │   └── AuthContext.jsx   # Global auth state (Context API)
 │   │
 │   ├── utils/
-│   │   └── preview.js
+│   │   └── preview.js        # Live preview rendering logic
 │   │
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── styles.css
 │
-├── migrations/
+├── migrations/                # PostgreSQL schema migrations
 ├── package.json
 ├── vite.config.js
 └── README.md
@@ -104,83 +100,91 @@ collaborative-code-editor/
 
 ## 🚀 Getting Started
 
-### Clone Repository
+### Prerequisites
+- Node.js ≥ 18
+- A PostgreSQL database
+- An [InsForge](https://insforge.dev) project
 
+### 1. Clone the repository
 ```bash
 git clone https://github.com/Harsh-9113/collaborative-code-editor.git
 ```
 
-### Navigate to Project
-
+### 2. Navigate to the project
 ```bash
 cd collaborative-code-editor
 ```
 
-### Install Dependencies
-
+### 3. Install dependencies
 ```bash
 npm install
 ```
 
-### Start Development Server
+### 4. Configure environment variables
+Create a `.env` file in the project root:
+```env
+VITE_INSFORGE_PROJECT_URL=your_insforge_project_url
+VITE_INSFORGE_API_KEY=your_insforge_api_key
+DATABASE_URL=postgresql://user:password@localhost:5432/collaborative_editor
+```
 
+### 5. Run database migrations
+```bash
+# run files in /migrations against your PostgreSQL instance
+```
+
+### 6. Start the development server
 ```bash
 npm run dev
 ```
+
+The app will be available at **http://localhost:5173**.
 
 ---
 
 ## 📸 Screenshots
 
-### Landing Page
-- Workspace Creation
-- User Authentication
+> _Add screenshots/GIFs here to showcase the app in action._
 
-### Workspace Editor
-- Monaco Editor
-- File Explorer
-- Live Preview
-
-### Team Collaboration
-- Member Invitations
-- Role Management
-
-(Add screenshots here later)
+| Section | Preview |
+|---|---|
+| **Landing Page** — workspace creation & authentication | _coming soon_ |
+| **Workspace Editor** — Monaco editor, file explorer, live preview | _coming soon_ |
+| **Team Collaboration** — member invitations & role management | _coming soon_ |
 
 ---
 
 ## 🎯 Key Learning Outcomes
 
-- Authentication & Authorization
-- State Management in React
-- Database Design
-- CRUD Operations
-- Workspace Architecture
-- File Management Systems
-- Collaborative Application Design
-- Git & GitHub Workflow
+- Authentication & authorization flows
+- State management in React (Context API)
+- Relational database design
+- CRUD operations end-to-end
+- Workspace & multi-tenancy architecture
+- File management systems
+- Collaborative application design
+- Git & GitHub workflow
 
 ---
 
 ## 🔮 Future Improvements
 
-- Real-Time Cursor Tracking
-- Live Multi-User Editing
-- In-App Chat System
-- Code Execution Engine
-- Version History
-- Dark Mode
-- AI Code Assistant
-- Git Integration
+- [ ] Real-time cursor tracking
+- [ ] Live multi-user editing
+- [ ] In-app chat system
+- [ ] Code execution engine
+- [ ] Version history
+- [ ] Dark mode
+- [ ] AI code assistant
+- [ ] Git integration
 
 ---
 
 ## 👨‍💻 Author
 
 **Harsh Kumar**
-
-GitHub: https://github.com/Harsh-9113
+GitHub: [@Harsh-9113](https://github.com/Harsh-9113)
 
 ---
 
-⭐ If you found this project useful, consider starring the repository.
+⭐ If you found this project useful, consider starring the repository!
