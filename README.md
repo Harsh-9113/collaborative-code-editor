@@ -6,8 +6,6 @@ A full-stack collaborative coding platform where multiple users can create works
 
 This project simulates a lightweight online development environment that enables developers to collaborate inside shared workspaces. Users can create coding rooms, manage files, invite collaborators, and instantly preview HTML/CSS/JavaScript changes.
 
----
-![image alt].(https://github.com/Harsh-9113/collaborative-code-editor/blob/d4728633ac07f6a444c5446d2afd74e1c328a993/Screenshot%202026-06-24%20215615.png)
 
 ## ✨ Features
 
