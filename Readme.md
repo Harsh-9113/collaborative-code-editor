@@ -8,16 +8,19 @@ This project simulates a lightweight online development environment that enables
 
 ---
 
-
-
 ### Landing Page
-![Landing Page](./screenshots/landing-page.png)
+![Landing Page](./screenshot/landing-page.png)
 
 ### Login Page
-![Login Page](./screenshots/login-page.png)
+![Login Page](./screenshot/login-page%20(2).png)
+
+### Sign Up Page
+![Sign Up Page](./screenshot/signup.png)
 
 ### Workspace Editor
-![Workspace Editor](./screenshots/workspace-editor.png)
+![Workspace Editor](./screenshot/workspace%20editor.png)
+
+
 
 
 ## ✨ Features
